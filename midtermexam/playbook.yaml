@@ -1,0 +1,14 @@
+---
+- name: Installation in Ubuntu
+  hosts: ubuntu
+  vars_files:
+    - ./config.yaml
+
+  roles:
+    - elastic1
+    - nagios1ins
+    - nagios2ins
+    - nagios3ins
+    - grafana1ins
+    - lamp1ins
+
